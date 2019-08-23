@@ -12,6 +12,10 @@
 		1816DAED231087B400AC364F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1816DAEB231087B400AC364F /* Main.storyboard */; };
 		1816DAEF231087B500AC364F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1816DAEE231087B500AC364F /* Assets.xcassets */; };
 		1816DAF2231087B500AC364F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1816DAF0231087B500AC364F /* LaunchScreen.storyboard */; };
+		1816DAFA231095EC00AC364F /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816DAF9231095EC00AC364F /* SongCell.swift */; };
+		18DE0F1523113C340013628B /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE0F1423113C340013628B /* Song.swift */; };
+		18DFBC8F231469AD0029D47C /* MiniSongPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFBC8E231469AD0029D47C /* MiniSongPlayerViewController.swift */; };
+		18DFBC92231473390029D47C /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFBC91231473390029D47C /* Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		1816DAEE231087B500AC364F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1816DAF1231087B500AC364F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1816DAF3231087B500AC364F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1816DAF9231095EC00AC364F /* SongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
+		18DE0F1423113C340013628B /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		18DFBC8E231469AD0029D47C /* MiniSongPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniSongPlayerViewController.swift; sourceTree = "<group>"; };
+		18DFBC91231473390029D47C /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		1816DAE6231087B400AC364F /* apple-music-transition */ = {
 			isa = PBXGroup;
 			children = (
+				18DFBC902314731C0029D47C /* Utils */,
+				18DE0F1623113C520013628B /* Views */,
+				18DE0F1323113C210013628B /* Model */,
 				1816DAE7231087B400AC364F /* AppDelegate.swift */,
 				1816DAE9231087B400AC364F /* ViewController.swift */,
 				1816DAEB231087B400AC364F /* Main.storyboard */,
 				1816DAEE231087B500AC364F /* Assets.xcassets */,
 				1816DAF0231087B500AC364F /* LaunchScreen.storyboard */,
 				1816DAF3231087B500AC364F /* Info.plist */,
+				18DFBC8E231469AD0029D47C /* MiniSongPlayerViewController.swift */,
 			);
 			path = "apple-music-transition";
+			sourceTree = "<group>";
+		};
+		18DE0F1323113C210013628B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18DE0F1423113C340013628B /* Song.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18DE0F1623113C520013628B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1816DAF9231095EC00AC364F /* SongCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18DFBC902314731C0029D47C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				18DFBC91231473390029D47C /* Image.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18DE0F1523113C340013628B /* Song.swift in Sources */,
+				18DFBC92231473390029D47C /* Image.swift in Sources */,
 				1816DAEA231087B400AC364F /* ViewController.swift in Sources */,
+				1816DAFA231095EC00AC364F /* SongCell.swift in Sources */,
 				1816DAE8231087B400AC364F /* AppDelegate.swift in Sources */,
+				18DFBC8F231469AD0029D47C /* MiniSongPlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
